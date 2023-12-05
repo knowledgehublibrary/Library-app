@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knowledge Hub Library</title>
 
-    <!-- Add a link to Google Fonts (Poppins in this example) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <!-- Add a link to Google Fonts (Montserrat in this example) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
 
     <style>
         body {
-            font-family: 'Poppins', sans-serif; /* Apply the custom font */
+            font-family: 'Montserrat', sans-serif; /* Apply the custom font */
             background-color: #0e4251;
             margin: 0;
             padding: 20px;
@@ -60,6 +60,7 @@
     <button onclick="redirectToCashSheet()">Cash</button>
     <button onclick="redirectToSeatsSheet()">Seats</button>
     <button onclick="redirectToInsertSeatForm()">Update Seats</button>
+    <button onclick="redirectToCouponRegistration()">Coupon Registration</button>
 
     <script>
         function redirectToCashSheet() {
@@ -72,6 +73,10 @@
 
         function redirectToInsertSeatForm() {
             window.open('https://docs.google.com/forms/d/e/1FAIpQLSdmJwuWOO2oHL4ictKVwZWZ6cotxc_TnyKzItt8ACs9CBSxMw/viewform?embedded=true', '_blank');
+        }
+
+        function redirectToCouponRegistration() {
+            window.open('https://docs.google.com/forms/d/12WnRrsOiiZqpYjPq4IJ5xsrxvsUQVyEUC5MEpRmdCWQ/edit?usp=drivesdk', '_blank');
         }
     </script>
 

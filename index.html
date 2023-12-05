@@ -43,12 +43,6 @@
             background-color: #d4ca00;
         }
 
-        .iframe-container {
-            width: 100%;
-            max-width: 640px;
-            margin: 0 auto;
-        }
-
         .footer {
             position: fixed;
             bottom: 0;
@@ -66,9 +60,7 @@
     <button onclick="redirectToCashSheet()">Cash</button>
     <button onclick="redirectToSeatsSheet()">Seats</button>
     <button onclick="redirectToInsertSeatForm()">Update Seats</button>
-    <button onclick="displayEmbeddedForm()">Coupon Registration</button>
-
-    <div class="iframe-container" id="embeddedForm"></div>
+    <button onclick="openEmbeddedForm()">Coupon Registration</button>
 
     <script>
         function redirectToCashSheet() {
@@ -83,10 +75,8 @@
             window.open('https://docs.google.com/forms/d/e/1FAIpQLSdmJwuWOO2oHL4ictKVwZWZ6cotxc_TnyKzItt8ACs9CBSxMw/viewform?embedded=true', '_blank');
         }
 
-        function displayEmbeddedForm() {
-            document.getElementById("embeddedForm").innerHTML =
-                '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZGS6X7q-qRBbKw3dCnjZsa4E8CcZEGNuVk6JR3GNYUCmtDQ/viewform?embedded=true" ' +
-                'width="640" height="855" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+        function openEmbeddedForm() {
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSfZGS6X7q-qRBbKw3dCnjZsa4E8CcZEGNuVk6JR3GNYUCmtDQ/viewform?embedded=true', '_blank');
         }
     </script>
 

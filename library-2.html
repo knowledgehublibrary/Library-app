@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Hub Library</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0e4251;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        button {
+            background-color: #fded01;
+            color: #000;
+            padding: 12px 24px;
+            font-size: 18px;
+            margin: 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #d4ca00;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+            font-style: italic;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Knowledge Hub Library</h1>
+
+    <button onclick="redirectToCashSheet()">Cash</button>
+    <button onclick="redirectToSeatsSheet()">Seats</button>
+    <button onclick="redirectToInsertSeatForm()">Update Seats</button>
+
+    <script>
+        function redirectToCashSheet() {
+            window.location.href = 'https://docs.google.com/spreadsheets/d/1f5GWqOhGxV5mXMKVFoVMuD9VBNajUfrHxZQ6SwTJn84/edit?usp=drive_link';
+        }
+
+        function redirectToSeatsSheet() {
+            window.location.href = 'https://docs.google.com/spreadsheets/d/18tB3yJ5g8S7C6OCBAVJGbWC2v0mqlgoFnDZf1zXIoio/edit?usp=drive_link';
+        }
+
+        function redirectToInsertSeatForm() {
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSdmJwuWOO2oHL4ictKVwZWZ6cotxc_TnyKzItt8ACs9CBSxMw/viewform?embedded=true', '_blank');
+        }
+    </script>
+
+    <div class="footer">
+        <p>Developed by Naman</p>
+    </div>
+
+</body>
+</html>
